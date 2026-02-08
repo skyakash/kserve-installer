@@ -41,3 +41,4 @@ kubectl apply -f kserve-installer/config/samples/kserve_v1alpha1_kservestack.yam
 ## License
 Copyright 2026. Licensed under the Apache License, Version 2.0.
 
+# kserve-installer
