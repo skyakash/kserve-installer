@@ -1,0 +1,12 @@
+apiVersion: kserve.kserve.example.com/v1alpha1
+kind: KServeStack
+metadata:
+  labels:
+    app.kubernetes.io/name: kservestack
+    app.kubernetes.io/instance: kservestack-sample
+    app.kubernetes.io/part-of: kserve-installer
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: kserve-installer
+  name: kservestack-sample
+spec:
+  # TODO(user): Add fields here

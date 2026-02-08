@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- kserve_v1alpha1_kservestack.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples

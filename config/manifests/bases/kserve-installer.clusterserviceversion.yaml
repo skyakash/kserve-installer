@@ -1,0 +1,59 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: kserve-installer.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: KServeStack is the Schema for the kservestacks API
+      displayName: KServe Stack
+      kind: KServeStack
+      name: kservestacks.kserve.kserve.example.com
+      version: v1alpha1
+    required:
+    - kind: Istio
+      name: istios.sailoperator.io
+      version: v1
+    - kind: KnativeServing
+      name: knativeservings.operator.knative.dev
+      version: v1beta1
+    - kind: Certificate
+      name: certificates.cert-manager.io
+      version: v1
+  description: Installs KServe, Istio, and Knative
+  displayName: KServe Installer
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - kserve
+  - istio
+  - knative
+  links:
+  - name: Kserve Installer
+    url: https://kserve-installer.domain
+  maintainers:
+  - email: akash@example.com
+    name: Akash Deo
+  maturity: alpha
+  provider:
+    name: Akash Deo
+  version: 0.0.0
