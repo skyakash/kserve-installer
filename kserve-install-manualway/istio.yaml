@@ -1,0 +1,12 @@
+apiVersion: sailoperator.io/v1
+kind: Istio
+metadata:
+  name: default
+spec:
+  version: v1.28.3
+  namespace: istio-system
+  values:
+    global:
+      meshID: mesh1
+      multiCluster:
+        clusterName: docker-desktop

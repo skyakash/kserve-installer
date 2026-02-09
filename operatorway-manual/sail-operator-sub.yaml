@@ -1,0 +1,10 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  name: sailoperator
+  namespace: operators
+spec:
+  channel: stable-1.28
+  name: sailoperator
+  source: operatorhubio-catalog
+  sourceNamespace: olm
